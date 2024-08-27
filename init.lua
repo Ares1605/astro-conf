@@ -21,5 +21,23 @@ if not pcall(require, "lazy") then
   vim.cmd.quit()
 end
 
+-- Create an autocommand group
+local scroll_group = vim.api.nvim_create_augroup("SwitchScrolloffTopBottom", { clear = true })
+
+-- Create the autocommand
+vim.api.nvim_create_autocmd("CursorMoved", {
+  group = scroll_group,
+  callback = function()
+    local win_height = vim.api.nvim_win_get_height(0)
+    local cursor_line = vim.fn.winline()
+    
+    if cursor_line < win_height / 2 then
+      vim.opt_local.scrolloff = 0
+    else
+      vim.opt_local.scrolloff = 3
+    end
+  end,
+})
+
 require "lazy_setup"
 require "polish"
