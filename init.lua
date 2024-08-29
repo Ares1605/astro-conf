@@ -30,14 +30,15 @@ vim.api.nvim_create_autocmd("CursorMoved", {
   callback = function()
     local win_height = vim.api.nvim_win_get_height(0)
     local cursor_line = vim.fn.winline()
+    local buffer_line = vim.fn.line('.')
+    local last_line = vim.fn.line('$')
     
-    if cursor_line < win_height / 2 then
+    if cursor_line <= 5 or (last_line - buffer_line + 1) <= 5 then
       vim.opt_local.scrolloff = 0
     else
-      vim.opt_local.scrolloff = 3
+      vim.opt_local.scrolloff = 5
     end
   end,
 })
-
 require "lazy_setup"
 require "polish"
