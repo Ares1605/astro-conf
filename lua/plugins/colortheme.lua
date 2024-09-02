@@ -1,10 +1,27 @@
+-- return {
+--   "rebelot/kanagawa.nvim",
+--   config = function()
+--     -- vim.cmd.colorscheme('kanagawa-lotus')
+--     -- vim.cmd.colorscheme('kanagawa-dragon')
+--     vim.cmd.colorscheme('kanagawa')
+--   end
+-- }
+-- return {
+--   "xero/miasma.nvim",
+--   lazy = false,
+--   priority = 1000,
+--   config = function()
+--     vim.cmd("colorscheme miasma")
+--   end,
+-- }
+
 return {
-  "rebelot/kanagawa.nvim",
-  config = function()
-    -- vim.cmd.colorscheme('kanagawa-lotus')
-    -- vim.cmd.colorscheme('kanagawa-dragon')
-    vim.cmd.colorscheme('kanagawa')
-  end
+  'rktjmp/lush.nvim',
+  {'ab-dx/ares.nvim', 
+    config = function()
+      vim.cmd("colorscheme ares")
+    end,
+    name='ares', priority=1000},
 }
 -- return {
 --     'sainnhe/gruvbox-material',
