@@ -15,14 +15,22 @@
 --   end,
 -- }
 
+-- return {
+--   'rktjmp/lush.nvim',
+--   {'ab-dx/ares.nvim', 
+--     config = function()
+--       vim.cmd("colorscheme ares")
+--     end,
+--     name='ares', priority=1000},
+-- }
 return {
-  'rktjmp/lush.nvim',
-  {'ab-dx/ares.nvim', 
-    config = function()
-      vim.cmd("colorscheme ares")
-    end,
-    name='ares', priority=1000},
+  'luisiacc/gruvbox-baby',
+  branch = 'main',
+  config = function()
+    vim.cmd[[colorscheme gruvbox-baby]]
+  end
 }
+
 -- return {
 --     'sainnhe/gruvbox-material',
 --     lazy = false,
