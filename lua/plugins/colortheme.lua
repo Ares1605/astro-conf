@@ -3,7 +3,7 @@
 --   config = function()
 --     -- vim.cmd.colorscheme('kanagawa-lotus')
 --     -- vim.cmd.colorscheme('kanagawa-dragon')
---     vim.cmd.colorscheme('kanagawa')
+--     vim.cmd.colorscheme('kanagawa-lotus')
 --   end
 -- }
 -- return {
@@ -15,14 +15,13 @@
 --   end,
 -- }
 
--- return {
---   'rktjmp/lush.nvim',
---   {'ab-dx/ares.nvim', 
---     config = function()
---       vim.cmd("colorscheme ares")
---     end,
---     name='ares', priority=1000},
--- }
+return { 'rktjmp/lush.nvim',
+  {'ab-dx/ares.nvim', 
+    config = function()
+      vim.cmd("colorscheme ares")
+    end,
+    name='ares', priority=1000},
+}
 -- return {
 --   'luisiacc/gruvbox-baby',
 --   branch = 'main',
@@ -31,14 +30,14 @@
 --   end
 -- }
 
-return {
-    'sainnhe/gruvbox-material',
-    lazy = false,
-    priority = 1000,
-    config = function()
-      -- Optionally configure and load the colorscheme
-      -- directly inside the plugin declaration.
-      vim.g.gruvbox_material_enable_italic = true
-      vim.cmd.colorscheme('gruvbox-material')
-    end
-  }
+-- return {
+--     'sainnhe/gruvbox-material',
+--     lazy = false,
+--     priority = 1000,
+--     config = function()
+--       -- Optionally configure and load the colorscheme
+--       -- directly inside the plugin declaration.
+--       vim.g.gruvbox_material_enable_italic = true
+--       vim.cmd.colorscheme('gruvbox-material')
+--     end
+--   }
