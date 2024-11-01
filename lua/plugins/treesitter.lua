@@ -1,15 +1,12 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
--- Customize Treesitter
-
----@type LazySpec
+-- ~/.config/nvim/lua/user/plugins/treesitter.lua
 return {
   "nvim-treesitter/nvim-treesitter",
-  opts = {
-    ensure_installed = {
-      "lua",
-      "vim",
-      -- add more arguments for adding more treesitter parsers
-    },
-  },
+  opts = function(_, opts)
+    -- Add regex to ensure_installed list
+    if opts.ensure_installed ~= "all" then
+      opts.ensure_installed = opts.ensure_installed or {}
+      table.insert(opts.ensure_installed, "regex")
+    end
+    return opts
+  end,
 }

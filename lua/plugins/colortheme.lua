@@ -1,6 +1,18 @@
 -- Define all available themes
 local themes = {
-  kanagawa = {
+  wave = {
+    module = "rebelot/kanagawa.nvim",
+    setup = function()
+      vim.cmd.colorscheme('kanagawa-wave')
+    end
+  },
+  dragon = {
+    module = "rebelot/kanagawa.nvim",
+    setup = function()
+      vim.cmd.colorscheme('kanagawa-dragon')
+    end
+  },
+  lotus = {
     module = "rebelot/kanagawa.nvim",
     setup = function()
       vim.cmd.colorscheme('kanagawa-lotus')
@@ -80,14 +92,27 @@ local function switch_theme(theme_name)
   end
 end
 
--- Create command to switch themes
+-- Create command to switch themes with improved completion
 vim.api.nvim_create_user_command('ThemeSelect', function(opts)
   switch_theme(opts.args)
 end, {
   nargs = 1,
-  complete = function()
-    return vim.tbl_keys(themes)
-  end
+  complete = function(ArgLead, CmdLine, CursorPos)
+    local matches = {}
+    local theme_names = vim.tbl_keys(themes)
+    -- Sort theme names alphabetically
+    table.sort(theme_names)
+    
+    -- Filter themes based on input
+    for _, theme in ipairs(theme_names) do
+      if theme:lower():find('^' .. ArgLead:lower()) then
+        table.insert(matches, theme)
+      end
+    end
+    
+    return matches
+  end,
+  desc = "Select and apply a color theme"
 })
 
 -- Return multiple plugin configurations
@@ -143,7 +168,6 @@ return {
       vim.api.nvim_create_autocmd("ColorScheme", {
         pattern = "*",
         callback = function()
-          -- Re-apply your theme-specific settings here if needed
           vim.cmd("redraw")
         end,
       })

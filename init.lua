@@ -62,3 +62,6 @@ map('n', '<A-k>', function()
     vim.cmd('normal! <C-y>')
     vim.cmd('normal! zz')
 end, { desc = "Move cursor down, scroll down, and center screen" })
+
+-- In your init.lua or options.lua
+vim.opt.guicursor = "n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50"
