@@ -54,6 +54,12 @@ local themes = {
       vim.g.gruvbox_material_enable_italic = true
       vim.cmd.colorscheme('gruvbox-material')
     end
+  },
+  alduin = {
+    module = "AlessandroYorba/Alduin",
+    setup = function()
+      vim.cmd.colorscheme('alduin')
+    end
   }
 }
 
@@ -118,6 +124,11 @@ end, {
 -- Return multiple plugin configurations
 return {
   -- Kanagawa theme
+    {
+    "AlessandroYorba/Alduin",
+    priority = 1000,
+    lazy = false,
+  },
   {
     "rebelot/kanagawa.nvim",
     lazy = false,
