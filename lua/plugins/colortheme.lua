@@ -60,6 +60,20 @@ local themes = {
     setup = function()
       vim.cmd.colorscheme('alduin')
     end
+  },
+  doom_miramare = {
+    module="gustavoprietop/doom-themes.nvim",
+    setup = function()
+      vim.cmd('set background=dark')
+      vim.cmd.colorscheme('doom-miramare')
+    end
+  },
+  doom_gv_l = {
+    module="gustavoprietop/doom-themes.nvim",
+    setup = function()
+      vim.cmd('set background=light')
+      vim.cmd.colorscheme('doom-gruvbox')
+    end
   }
 }
 
@@ -123,6 +137,11 @@ end, {
 
 -- Return multiple plugin configurations
 return {
+  {
+    "gustavoprietop/doom-themes.nvim",
+    priority = 1000,
+    lazy = false,
+  },
   -- Kanagawa theme
     {
     "AlessandroYorba/Alduin",
