@@ -65,3 +65,6 @@ end, { desc = "Move cursor down, scroll down, and center screen" })
 
 -- In your init.lua or options.lua
 vim.opt.guicursor = "n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50"
+
+
+vim.api.nvim_set_keymap('t', '<C-k>', '<C-\\><C-n>:q<CR>', {noremap = true, silent = true})
