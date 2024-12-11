@@ -60,6 +60,24 @@ local themes = {
     setup = function()
       vim.cmd.colorscheme('alduin')
     end
+  },
+  oxocarbon = {
+    module = "nyoom-engineering/oxocarbon.nvim",
+    setup = function()
+      vim.cmd.colorscheme('oxocarbon')
+    end
+  },
+  clown = {
+    module = "aktersnurra/no-clown-fiesta.nvim",
+    setup = function()
+      vim.cmd.colorscheme('no-clown-fiesta')
+    end
+  },
+  everforest = {
+    module = "neanias/everforest-nvim",
+    setup = function()
+      vim.cmd.colorscheme('everforest')
+    end
   }
 }
 
@@ -127,7 +145,22 @@ return {
     {
     "AlessandroYorba/Alduin",
     priority = 1000,
-    lazy = false,
+    lazy = false
+  },
+  {
+    "neanias/everforest-nvim",
+    priority = 1000,
+    lazy = false
+  },
+  {
+    "aktersnurra/no-clown-fiesta.nvim",
+    priority = 1000,
+    lazy = false
+  },
+  {
+    "nyoom-engineering/oxocarbon.nvim",
+    priority = 1000,
+    lazy = false
   },
   {
     "rebelot/kanagawa.nvim",
