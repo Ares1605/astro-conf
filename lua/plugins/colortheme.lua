@@ -64,6 +64,7 @@ local themes = {
   oxocarbon = {
     module = "nyoom-engineering/oxocarbon.nvim",
     setup = function()
+      vim.cmd('set background=dark')
       vim.cmd.colorscheme('oxocarbon')
     end
   },
@@ -76,6 +77,7 @@ local themes = {
   everforest = {
     module = "neanias/everforest-nvim",
     setup = function()
+      vim.cmd('set background=dark')
       vim.cmd.colorscheme('everforest')
     end
   },
@@ -91,6 +93,34 @@ local themes = {
     setup = function()
       vim.cmd('set background=light')
       vim.cmd.colorscheme('doom-gruvbox')
+    end
+  },
+  miasma = {
+    module="xero/miasma.nvim",
+    setup = function()
+      vim.cmd('set background=dark')
+      vim.cmd('colorscheme miasma')
+    end
+  },
+  choco = {
+    "qaptoR-nvim/chocolatier.nvim",
+    setup = function()
+      vim.cmd('set background=dark')
+      vim.cmd('colorscheme chocolatier')
+    end
+  },
+  coffee = {
+    "coffee-theme/coffee.vim",
+    setup = function()
+      vim.cmd('set background=dark')
+      vim.cmd('colorscheme coffee')
+    end
+  },
+  espresso = {
+    "doums/espresso.nvim",
+    setup = function()
+      vim.cmd('set background=dark')
+      vim.cmd('colorscheme espresso')
     end
   }
 }
@@ -155,6 +185,25 @@ end, {
 
 -- Return multiple plugin configurations
 return {
+  {
+    'coffee-theme/coffee.vim',
+    priority=1000,lazy=false
+  },
+  {
+    "doums/espresso.nvim",
+    priority = 1000,
+    lazy = false
+  },
+  {
+    "xero/miasma.nvim",
+    priority = 1000,
+    lazy = false
+  },
+  {
+    "qaptoR-nvim/chocolatier.nvim",
+    priority = 1000,
+    lazy = false
+  },
   {
     "gustavoprietop/doom-themes.nvim",
     priority = 1000,
