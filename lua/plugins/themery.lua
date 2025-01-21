@@ -5,6 +5,20 @@ return {
     require("themery").setup({
       themes = {
         {
+          name = "jellybeans",
+          colorscheme = "jellybeans",
+          before = [[
+            vim.opt.background = "dark"
+          ]]
+        },
+        {
+          name = "mellifluous.nvim",
+          colorscheme = "mellifluous",
+          before = [[
+            vim.opt.background = "dark"
+          ]]
+        },
+        {
           name = "posterpole",
           colorscheme = "posterpole",
           before = [[
