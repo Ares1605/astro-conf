@@ -1,5 +1,10 @@
 return {
   {
+    "zootedb0t/citruszest.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  {
     "wtfox/jellybeans.nvim",
     priority = 1000,
     lazy=false,

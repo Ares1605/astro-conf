@@ -5,6 +5,13 @@ return {
     require("themery").setup({
       themes = {
         {
+          name = "citrus",
+          colorscheme = "citruszest",
+          before = [[
+            vim.opt.background = "dark"
+          ]]
+        },
+        {
           name = "jellybeans",
           colorscheme = "jellybeans",
           before = [[
