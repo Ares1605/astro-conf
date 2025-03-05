@@ -5,6 +5,22 @@ return {
     require("themery").setup({
       themes = {
         {
+          name="sunset_cloud",
+          colorscheme="sunset_cloud",
+        },
+        {
+          name="radioactive_waste",
+          colorscheme="radioactive_waste"
+        },
+        {
+          name="forest_stream",
+          colorscheme="forest_stream"
+        },
+        {
+          name="crimson_moonlight",
+          colorscheme="crimson_moonlight"
+        },
+        {
           name = "posterpole",
           colorscheme = "posterpole",
           before = [[
@@ -130,6 +146,13 @@ return {
         {
           name = "rakis light",
           colorscheme = "rakis",
+          before = [[
+            vim.opt.background = "light"
+          ]]
+        },
+        {
+          name="zenbones",
+          colorscheme="zenbones",
           before = [[
             vim.opt.background = "light"
           ]]

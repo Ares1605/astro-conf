@@ -1,5 +1,15 @@
 return {
   {
+    "zenbones-theme/zenbones.nvim",
+    priority=1000,
+    lazy=false
+  },
+  {
+    "rockerBOO/boo-colorscheme-nvim",
+    priority=1000,
+    lazy=false
+  },
+  {
     "ilof2/posterpole.nvim",
     priority=1000,
     lazy=false
