@@ -1,5 +1,10 @@
 return {
   {
+    "ashen-org/ashen.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  {
     "zootedb0t/citruszest.nvim",
     lazy = false,
     priority = 1000,
