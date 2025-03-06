@@ -1,5 +1,10 @@
 return {
   {
+    "savq/melange-nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  {
     "ashen-org/ashen.nvim",
     lazy = false,
     priority = 1000,
