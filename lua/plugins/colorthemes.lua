@@ -2,7 +2,16 @@ return {
   {
     "savq/melange-nvim",
     lazy = false,
-    priority = 1000,
+    priority = 1000
+  },
+    "zenbones-theme/zenbones.nvim",
+    priority=1000,
+    lazy=false
+  },
+  {
+    "rockerBOO/boo-colorscheme-nvim",
+    priority=1000,
+    lazy=false
   },
   {
     "ashen-org/ashen.nvim",
@@ -68,8 +77,7 @@ return {
     priority = 1000,
     lazy = false,
   },
-  -- Kanagawa theme
-    {
+  {
     "AlessandroYorba/Alduin",
     priority = 1000,
     lazy = false
