@@ -4,6 +4,7 @@ return {
     lazy = false,
     priority = 1000
   },
+  {
     "zenbones-theme/zenbones.nvim",
     priority=1000,
     lazy=false
