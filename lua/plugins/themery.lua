@@ -21,6 +21,34 @@ return {
           colorscheme="crimson_moonlight"
         },
         {
+          name = "ashen",
+          colorscheme = "ashen",
+          before = [[
+            vim.opt.background = "dark"
+          ]]
+        },
+        {
+          name = "citrus",
+          colorscheme = "citruszest",
+          before = [[
+            vim.opt.background = "dark"
+          ]]
+        },
+        {
+          name = "jellybeans",
+          colorscheme = "jellybeans",
+          before = [[
+            vim.opt.background = "dark"
+          ]]
+        },
+        {
+          name = "mellifluous.nvim",
+          colorscheme = "mellifluous",
+          before = [[
+            vim.opt.background = "dark"
+          ]]
+        },
+        {
           name = "posterpole",
           colorscheme = "posterpole",
           before = [[

@@ -10,6 +10,30 @@ return {
     lazy=false
   },
   {
+    "ashen-org/ashen.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  {
+    "zootedb0t/citruszest.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  {
+    "wtfox/jellybeans.nvim",
+    priority = 1000,
+    lazy=false,
+    config = function()
+      require("jellybeans").setup()
+      vim.cmd.colorscheme("jellybeans")
+    end,
+  },
+  {
+    "ramojus/mellifluous.nvim",
+    priority=1000,
+    lazy=false
+  },
+  {
     "ilof2/posterpole.nvim",
     priority=1000,
     lazy=false
