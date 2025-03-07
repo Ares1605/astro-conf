@@ -5,11 +5,19 @@ return {
     require("themery").setup({
       themes = {
         {
-          name="sunset_cloud",
+          name="rose pine",
+          colorscheme="rose-pine"
+        },
+        {
+          name="rose pine moon",
+          colorscheme="rose-pine-moon"
+        },
+        {
+          name="sunset cloud",
           colorscheme="sunset_cloud",
         },
         {
-          name="radioactive_waste",
+          name="radioactive waste",
           colorscheme="radioactive_waste"
         },
         {
@@ -17,7 +25,7 @@ return {
           colorscheme="forest_stream"
         },
         {
-          name="crimson_moonlight",
+          name="crimson moonlight",
           colorscheme="crimson_moonlight"
         },
         {
