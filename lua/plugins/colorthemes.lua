@@ -1,5 +1,10 @@
 return {
   {
+    "aliqyan-21/darkvoid.nvim",
+    lazy = false,
+    priority = 1000
+  },
+  {
     "savq/melange-nvim",
     lazy = false,
     priority = 1000
