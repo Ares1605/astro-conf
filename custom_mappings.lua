@@ -1,7 +1,6 @@
 local M = {}
 
-M.normal_mode = {
-  ["n"] = {
+M.normal_mode = { ["n"] = {
       function()
         print(vim.fn.expand('%'))
       end,

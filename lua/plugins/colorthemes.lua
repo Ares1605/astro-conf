@@ -1,6 +1,16 @@
 return {
   {
-    "aliqyan-21/darkvoid.nvim",
+    "Abstract-IDE/Abstract-cs",
+    lazy = false,
+    priority = 1000
+  },
+  {
+    "vim-scripts/true-monochrome",
+    lazy = false,
+    priority = 1000
+  },
+  {
+    "rose-pine/neovim",
     lazy = false,
     priority = 1000
   },
