@@ -89,6 +89,7 @@
   "toggleterm.nvim": { "branch": "main", "commit": "48be57eaba817f038d61bbf64d2c597f578c0827" },
   "true-monochrome": { "branch": "master", "commit": "da43d7415643e8c62d4d17b04a4d190759e81b3b" },
   "vim-illuminate": { "branch": "master", "commit": "5eeb7951fc630682c322e88a9bbdae5c224ff0aa" },
+  "vim-petra": { "branch": "master", "commit": "c4e3a133c0cd9ed0747515ad5df0d1eab697d263" },
   "which-key.nvim": { "branch": "main", "commit": "fb070344402cfc662299d9914f5546d840a22126" },
   "zenbones.nvim": { "branch": "main", "commit": "3c0b86bb912d41d191d90c019a346f6a1d27f588" }
 }

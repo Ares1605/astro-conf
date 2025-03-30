@@ -22,6 +22,10 @@ return {
           ]]
         },
         {
+          name="petra",
+          colorscheme="petra"
+        },
+        {
           name="rose pine",
           colorscheme="rose-pine"
         },
