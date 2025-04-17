@@ -5,6 +5,14 @@ return {
     require("themery").setup({
       themes = {
         {
+          name="ayu",
+          colorscheme="ayu"
+        },
+        {
+          name="tender",
+          colorscheme="tender"
+        },
+        {
           name="abstract",
           colorscheme="abscs",
         },
@@ -52,6 +60,13 @@ return {
         {
           name = "melange",
           colorscheme = "melange",
+          before = [[
+            vim.opt.background = "dark"
+          ]]
+        },
+        {
+          name = "mocha blue",
+          colorscheme = "catppuccin-mocha",
           before = [[
             vim.opt.background = "dark"
           ]]
@@ -197,15 +212,55 @@ return {
           ]]
         },
         {
-          name = "kanagawa lotus",
-          colorscheme = "kanagawa-lotus"
+          name = "doom palenight",
+          colorscheme = "doom-palenight",
+          before = [[
+            vim.opt.background = "dark"
+          ]]
         },
         {
-          name = "doom gruvbox light",
-          colorscheme = "doom-gruvbox",
+          name = "doom monokai flatland",
+          colorscheme = "doom-monokai-flatland",
           before = [[
-            vim.opt.background = "light"
+            vim.opt.background = "dark"
           ]]
+        },
+        {
+          name = "doom fairy floss",
+          colorscheme = "doom-fairy-floss",
+          before = [[
+            vim.opt.background = "dark"
+          ]]
+        },
+        {
+          name = "doom horizon",
+          colorscheme = "doom-horizon",
+          before = [[
+            vim.opt.background = "dark"
+          ]]
+        },
+        {
+          name = "doom challenger deep",
+          colorscheme = "doom-challenger-deep",
+          before = [[
+            vim.opt.background = "dark"
+          ]]
+        },
+        {
+          name = "kanagawa paper",
+          colorscheme = "kanagawa-paper",
+        },
+        {
+          name = "kanagawa paper ink",
+          colorscheme = "kanagawa-paper-ink",
+        },
+        {
+          name = "kanagawa paper canvas",
+          colorscheme = "kanagawa-paper-canvas",
+        },
+        {
+          name = "kanagawa lotus",
+          colorscheme = "kanagawa-lotus"
         },
         {
           name = "rakis light",
