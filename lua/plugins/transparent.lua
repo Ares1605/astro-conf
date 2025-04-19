@@ -1,27 +1,23 @@
 return {
-  "nvim-lua/plenary.nvim", -- A dependency many plugins use
-  lazy = false,
-  config = function()
-    -- Create an autocmd to set transparency after colorscheme changes
+  "xiyaowong/transparent.nvim",
+  lazy = false,   -- load at startup
+  opts = {
+    -- this will clear all the defaults *plus* these extra groups:
+    extra_groups   = { "NormalFloat", "NormalNC", "SignColumn", "LineNr" },
+    -- nothing is excluded
+    exclude_groups = {},
+  },
+  config = function(_, opts)
+    -- 1) install the plugin
+    require("transparent").setup(opts)  -- :contentReference[oaicite:0]{index=0}
+
+    -- 2) clear *right now* (in case your colorscheme already ran)
+    vim.cmd("TransparentEnable")
+
+    -- 3) re‑apply every time a colorscheme is (re)loaded
     vim.api.nvim_create_autocmd("ColorScheme", {
       pattern = "*",
-      callback = function()
-        -- Make backgrounds transparent
-        vim.api.nvim_set_hl(0, "Normal", { bg = "NONE" })
-        vim.api.nvim_set_hl(0, "NormalFloat", { bg = "NONE" })
-        vim.api.nvim_set_hl(0, "NormalNC", { bg = "NONE" })
-        vim.api.nvim_set_hl(0, "LineNr", { bg = "NONE" })
-        vim.api.nvim_set_hl(0, "SignColumn", { bg = "NONE" })
-        vim.api.nvim_set_hl(0, "EndOfBuffer", { bg = "NONE" })
-      end,
+      command = "TransparentEnable",   -- :contentReference[oaicite:1]{index=1}
     })
-    
-    -- Apply transparency immediately for the current colorscheme
-    vim.api.nvim_set_hl(0, "Normal", { bg = "NONE" })
-    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "NONE" })
-    vim.api.nvim_set_hl(0, "NormalNC", { bg = "NONE" })
-    vim.api.nvim_set_hl(0, "LineNr", { bg = "NONE" })
-    vim.api.nvim_set_hl(0, "SignColumn", { bg = "NONE" })
-    vim.api.nvim_set_hl(0, "EndOfBuffer", { bg = "NONE" })
-  end
+  end,
 }
