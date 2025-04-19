@@ -2,7 +2,27 @@ return {
   {
     'Verf/deepwhite.nvim',
     lazy = false,
+    priority = 1000
+  },
+  {
+    "Shatur/neovim-ayu",
+    lazy = false,
+    priority = 1000
+  },
+  {
+    "jacoborus/tender.vim",
+    lazy = false,
+    priority = 1000
+  },
+  {
+    "thesimonho/kanagawa-paper.nvim",
+    lazy = false,
     priority = 1000,
+  },
+  {
+    "catppuccin/nvim",
+    lazy = false,
+    priority = 1000
   },
   {
     "mipmip/vim-petra",
