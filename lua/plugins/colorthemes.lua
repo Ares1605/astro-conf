@@ -1,5 +1,10 @@
 return {
   {
+    'Verf/deepwhite.nvim',
+    lazy = false,
+    priority = 1000,
+  },
+  {
     "mipmip/vim-petra",
     lazy = false,
     priority = 1000

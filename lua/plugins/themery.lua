@@ -22,6 +22,10 @@ return {
           ]]
         },
         {
+          name="deep white",
+          colorscheme="deepwhite"
+        },
+        {
           name="petra",
           colorscheme="petra"
         },
