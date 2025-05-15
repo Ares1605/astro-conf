@@ -89,13 +89,13 @@ return {
             vim.opt.background = "dark"
           ]]
         },
-        {
-          name = "jellybeans",
-          colorscheme = "jellybeans",
-          before = [[
-            vim.opt.background = "dark"
-          ]]
-        },
+        -- {
+        --   name = "jellybeans",
+        --   colorscheme = "jellybeans",
+        --   before = [[
+        --     vim.opt.background = "dark"
+        --   ]]
+        -- },
         {
           name = "mellifluous.nvim",
           colorscheme = "mellifluous",
