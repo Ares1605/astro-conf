@@ -68,3 +68,13 @@ vim.opt.guicursor = "n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50"
 
 
 vim.api.nvim_set_keymap('t', '<C-k>', '<C-\\><C-n>:q<CR>', {noremap = true, silent = true})
+
+require("notify").setup({
+  background_colour = "#000000",
+})
+
+vim.keymap.set('i', '<S-Tab>', 'copilot#Accept("\\<CR>")', {
+  expr = true,
+  replace_keycodes = false
+})
+vim.g.copilot_no_tab_map = true
