@@ -51,13 +51,13 @@ local function map(mode, lhs, rhs, opts)
     end
     vim.keymap.set(mode, lhs, rhs, options)
 end
-map('n', '<S-j>', function()
+map('n', '<C-j>', function()
     vim.cmd('normal! j')
     vim.cmd('normal! <C-e>')
     vim.cmd('normal! zz')
 end, { desc = "Move cursor down, scroll down, and center screen" })
 
-map('n', '<S-k>', function()
+map('n', '<C-k>', function()
     vim.cmd('normal! k')
     vim.cmd('normal! <C-y>')
     vim.cmd('normal! zz')
@@ -76,4 +76,4 @@ vim.keymap.set('i', '<S-Tab>', 'copilot#Accept("\\<CR>")', {
   replace_keycodes = false
 })
 vim.g.copilot_no_tab_map = true
--- -- vim.api.nvim_set_keymap('t', '<C-k>', '<C-\\><C-n>:q<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('t', '<C-k>', '<C-\\><C-n>:q<CR>', {noremap = true, silent = true})
